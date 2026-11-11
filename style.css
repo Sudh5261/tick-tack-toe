@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #548687;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width:60vmin;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1vmin;
+}
+.box{
+    height: 18vmin;
+    width:18vmin;
+    border-radius:1rem;
+    border:none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: 8vmin;
+    color:#b0413e;
+    background-color: #ffffc7;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+.box:active{
+    height: 20vmin;
+    width:20vmin;
+    border-radius:1rem;
+    border:none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+    font-size: 8vmin;
+    color:#b0413e;
+    background-color: #ffffc7;
+    
+}
+#reset-game{
+    padding:1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color:#fff;
+    border-radius: 1rem;
+    border:none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+#reset-game:active{
+    padding:1.3rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color:#fff;
+    border-radius: 1rem;
+    border:none;
+    /* transition: all;
+    transition-duration: 0.7s; */
+
+}
+#new-btn{
+    padding:1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color:#fff;
+    border-radius: 1rem;
+    border:none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+#new-btn:active{
+    padding:1.3rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color:#fff;
+    border-radius: 1rem;
+    border:none;
+    
+}
+#msg{
+    color:#ffffc7;
+    font-size: 4vmin;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+.hide{
+    display: none;
+}
+.mode{
+    text-align: left;
+    height: 100px;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    
+}
+#mode{
+    font-size: 3vh;
+    border-radius: 6px;
+    background-color: #FFFFC7;
+    color:black;
+    cursor:pointer;
+}
+.light-mode-body{
+    background-color: white;
+
+}
+.light-mode-boxes{
+    background-color: white;
+    color:black;
+}
+.light-mode-boxes:active{
+    background-color: white;
+    color:black;
+}
+body.light-mode-body #msg {
+    color: #222222;
+}
+#mode.mode-light-mode{
+    background-color: rgb(237, 233, 233);
+}
